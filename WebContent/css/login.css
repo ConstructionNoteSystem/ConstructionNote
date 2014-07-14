@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.bts span { float:left; margin:12px 0 0 46px; padding:2px 8px; cursor:pointer; border:1px solid #999; background-color:#DDD;}
+.bts span:hover {background-color:#FFF;}
+body { background-color: #D2D2D2;}
+#login_page { width:416px; height:222px; padding:12px; border:1px solid #999; margin:auto; background-color: #BBB;}
+#login_page #tb { width:380px; margin-left:8px; margin-top:10px;}
+#login_page #tb .row { height:28px; line-height: 28px;}
+#login_page #tb input { width:110px;}
+#login_page .mes_b { color:#363636;}
+#login_page .mes_r { color:#f00; line-height: 12px;}
+#login_page .mes_g { color:#00f;}
+#login_page .foot { margin-top:10px; }
+#login_page .foot p {text-align:center; line-height:22px;}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>祥发工程施工日志管理软件-用户登陆</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="login_page">
+	<img src="img/logo.gif" alt="祥发日志管理系统" />
+		<form id="f" action="login.do" method="post" name="f">
+			<table id="tb">
+				<tbody>
+					<tr class="row">
+						<td width="90" align="right"><img src="img/name.gif" alt="用户名" />&nbsp;&nbsp;用户名：</td>
+						<td width="120"><input type="text" onkeydown="javascript:enterLogin(event);" onblur="javascript:checkLogin();" name="txtName" id="txtName" /></td>
+						<td class="mes_b" id="mes_name">请输入用户名</td>
+					</tr>
+					<tr class="row">
+						<td align="right"><img src="img/password.gif" alt="密码" />&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;码：</td>
+						<td><input type="password" onkeydown="javascript:enterLogin(event);" onblur="javascript:checkLogin();" name="txtPassword" id="txtPassword" /></td>
+						<td class="mes_b" id="mes_password">请输入用户密码</td>
+					</tr>
+					<tr>
+						<td class="bts" colspan="3">
+							<span style="margin-left:60px;" onclick="javascript:login();">登陆</span>
+							<span style="margin-left:60px;" onclick="javascript:cannel();">取消</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="foot">
+        	<p>版权所有: © 祥发智能，苏州祥发智能工程有限公司</p>
+			<p>电话: 0512-63093966 邮件:szxfzn@163.com</p>
+        </div>
+	</div>
+    <script type="text/javascript">
+    	function $(id){
+    		return document.getElementById(id);
+    	}
+    	function cannel(){
+    		$('txtName').value = '';
+    		$('txtPassword').value = '';
+    		$('txtName').focus();
+    	}
+    	function checkLogin(){
+    		var name = $('txtName').value;
+    		var password = $('txtPassword').value;
+    		var name_reg = /^[\u4e00-\u9fa5_a-zA-Z0-9]{6,}/;
+    		var password_reg = /[a-zA-Z0-9]{6,}/;
+    		if(!name_reg.test(name)){
+        		$('mes_name').setAttribute('class', 'mes_r');
+    			$('mes_name').innerHTML = '用户名必须是中文、数字、字母或下划线，长度至少为6位';
+    			return false;
+    		}
+    		$('mes_name').setAttribute('class', 'mes_g');
+			$('mes_name').innerHTML = '√';
+    		if(!password_reg.test(password)){
+        		$('mes_password').setAttribute('class', 'mes_r');
+    			$('mes_password').innerHTML = '用户密码必须是数字、字母或下划线，长度至少为6位';
+    			return false;
+    		}
+    		$('mes_password').setAttribute('class', 'mes_g');
+			$('mes_password').innerHTML = '√';
+			return true;
+    	}
+    	function login(){
+    		if(checkLogin()){
+    			document.getElementById('f').submit();
+    		}
+    	}
+    	function enterLogin(e){
+    		e = window.event || e;
+    		if(e.keyCode == 13){
+    			login();
+    		}
+    	}
+    	$('login_page').style.marginTop = screen.height / 2 - 220 + 'px';
+    </script>
+</body>
+</html>

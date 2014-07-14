@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body_right { width:778px; float:left; background-color:#D2D2D2; }
+.body_right .body_right_content { width:750px; margin-left:2px; border:4px solid #AAA; height:458px; padding:8px 10px;}
+.body_right .body_right_title { margin:4px 0;}
+
+.body_right .right_main #config{ margin-top:14px;}
+.body_right .right_main #config a:hover{ color:#000;}
+.body_right .right_main #config .config_show{ width:100px; overflow:hidden; height:24px; float:left; background-color:#DDD; border:1px solid #AAA; text-align:center; line-height:24px; cursor:pointer; }
+.body_right .right_main #config .config_show2 { width:100px; overflow:hidden; height:24px; float:left; background-color:#AAA; font-weight:bold; border:1px solid #AAA; text-align:center; line-height:24px; cursor:pointer;}
+.body_right .right_main #config .position { height:15px; width:15px; float:left; margin-top:10px; margin-left:2px;}
+.body_right .right_main #config #left_position_black { background:url(../../img/position.gif) no-repeat;}
+.body_right .right_main #config #left_position_red { background:url(../../img/position.gif) 0px -25px no-repeat; cursor:pointer;}
+.body_right .right_main #config #right_position_black { background:url(../../img/position.gif) -25px 0px no-repeat;}
+.body_right .right_main #config #right_position_red { background:url(../../img/position.gif) -25px -25px no-repeat; cursor:pointer;}
+.body_right .right_main #config .c_tb{ clear:both; border:8px solid #AAA;}
+.body_right .right_main #config .c_tb .txta { width:730px; height:200px;}
+.body_right .right_main #config #fileLeft { width:600px; height:200px; overflow-y:scroll; border:1px solid #AAA; float:left;}
+.body_right .right_main #config #fileLeft .fileHead li { background-color:#C2C2C2; text-align: center;}
+.body_right .right_main #config #fileLeft ul { float:left;}
+.body_right .right_main #config #fileLeft li { float:left; padding:0 6px; line-height:34px; border:1px solid #AAA; height:34px; overflow: hidden;}
+.body_right .right_main #config #fileLeft .fileName { width:464px;}
+.body_right .right_main #config #fileLeft .fileOp { width:90px;}
+.body_right .right_main #config #fileLeft a { margin-left:6px; }
+.body_right .right_main #config #fileLeft a:hover { color:#F00; width:40px; }
+.body_right .right_main #config #fileLeft .fileDel { margin-left:20px;}
+.body_right .right_main #config #fileRight { margin:10px 12px; float:left; background:url(../../img/fu_btn.gif) left bottom no-repeat; width:90px; height:30px;}
+.body_right .right_main #config #fileRight:hover { cursor:pointer; background:url(../../img/fu_btn.gif) left top no-repeat;}
+.body_right .title_w { margin-left:20px;}
+.body_right .body_right_title .f_span { float:left; margin-top:4px;}
+.body_right .body_right_title #recordDate { float:left; width:80px; height:14px; margin-left:10px; margin-top:4px;}
+.body_right .txt { width:50px; position:absolute; height:14px; padding-left:2px;}
+.body_right .st { width:67px; clip:rect(auto auto auto 60px); position:absolute; }
+.body_right .afternoon { margin-left:90px;}
+.body_right .title_t { margin-left:90px;}
+.body_right .txtTem { width:40px;}
+.body_right .right_classes { margin-top:8px;}
+.body_right .right_classes p { line-height:26px; padding-left:4px;}
+.body_right .right_classes #add_class { width:90px; height:26px; margin-left:10px; border:1px solid #999; padding:2px 4px; background-color:#DDD; cursor:pointer;}
+.body_right .right_classes #add_class:hover { background-color:#FFF;}
+
+.body_right .right_classes .ou { background-color:#C1C1C1;}
+.body_right .right_classes table { table-layout:fixed; width:730px; border:1px solid #AAA;}
+.body_right .right_classes table a { color:#F33;}
+.body_right .right_classes table a:hover { color:#F00; font-weight:bold;}
+.body_right .right_classes tr td, th { border:1px solid #AAA; line-height:20px; padding:0 4px; height:20px; }
+.body_right .right_classes tr td { overflow:hidden; white-space:nowrap;}
+.body_right .right_classes .classes { overflow:auto; height:120px; width:750px;}
+
+.bts span { line-height:18px; float:left; margin:12px 0 0 46px; padding:0px 8px; cursor:pointer; border:1px solid #999; background-color:#DDD;}
+.bts span:hover {background-color:#FFF;}
+
+
+.body_right #classes { height:111px; overflow:auto;}
+.body_right #classes li{float:left; border:1px solid #aaa; bagckground-color:#d2d2d2; padding:0px 4px; white-space:nowrap; overflow:hidden; line-height:20px;}
+.body_right #classes .classId{display:none;}
+.body_right #classes .className{clear:left;width:72px; border-left:4px solid #aaa; }
+.body_right #classes .arrivedNum{width:52px;}
+.body_right #classes .pname{width:182px;}
+.body_right #classes .cpart{width:142px;}
+.body_right #classes .status,#classes .className{width:72px;}
+.body_right #classes .bosshead,#classes .op,#classes .totalNum{width:42px;}
+.body_right #classes .op{ border-right:2px solid #aaa; text-align:center;}
+.body_right #classes .op a { color:#F00;}
+.body_right #classes .op a:hover { cursor:pointer;}
+

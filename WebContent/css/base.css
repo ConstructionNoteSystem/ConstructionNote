@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; font-size: 12px; }
+
+img { border: 0 none; vertical-align: top; }
+
+ul, li { list-style-type: none; }
+
+body, input, select, button, textarea { font-size: 12px; font-family: Tahoma, Geneva, sans-serif; }
+
+button { cursor: pointer; }
+
+i, em, cite { font-style: normal; }
+
+body { background: #fff; color: #363636; line-height: 1.2; }
+
+a, a:link { color: #222; text-decoration: none; }
+
+a:visited { color:#222; }
+
+a:active, a:hover { color:#222; }
+
+a:focus { outline: none; }
+
+.red { color:#FF0000; vertical-align: middle;}

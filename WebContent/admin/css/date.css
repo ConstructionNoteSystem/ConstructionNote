@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body { background-color:#D2D2D2;}
+.body_left .left_show { width:88px; height:30px; float:left; border:1px solid #D2D2D2; text-align:center; line-height:30px; cursor:pointer;}
+.body_left .left_show:hover { font-weight:bold;}
+.body_left #div1 { font-weight:bold; border-color:#AAA; background-color:#AAA;}
+.body_left #c1 { overflow:auto; display:block; padding:6px 10px; width:152px;}
+.body_left #c2 { display:none; width:172px; height:440px;}
+.body_left .c_div{ float:left; border:4px solid #AAA; height:430px; width:146px; background-color:#FFF; }
+
+<!-- treeview -->
+.body_left #menu_zzjs_net{ margin:10px; width:126px;overflow:hidden;}
+.body_left #menu_zzjs_net li{line-height:18px;}
+.body_left #menu_zzjs_net .rem{padding-left:16px;}
+.body_left #menu_zzjs_net .add{background: url(../../img/tree.gif) -4px -31px no-repeat;}
+.body_left #menu_zzjs_net .ren{background:url(../../img/tree.gif) -4px -7px no-repeat;}
+.body_left #menu_zzjs_net li a{color:#666;padding-left:5px;outline:none;blr:expression(this.onFocus=this.blur());}
+.body_left #menu_zzjs_net li a:hover{ color:#F00; font-weight:bold;}
+.body_left #menu_zzjs_net li input{vertical-align:middle;margin-left:5px;}
+.body_left #menu_zzjs_net .two{padding-left:20px;display:none;}
+
+.body_left #search_result { padding:4px; border:4px solid #D2D2D2; width:156px; height:164px; overflow:auto;}
+.body_left .result_title { background-color:#D2D2D2; width:164px; height:12px; padding:4px 0 0 8px;}
+.body_left #search_result p { cursor:pointer; line-height:18px; padding-left:20px;}
+.body_left #search_result p:hover { background-color:#D2D2D2; color:#F00;}
+.body_left #search_result .simpleP { color:#222; border:0px; background-color:#FFF; cursor:default;}
+.body_left #search_result .simpleP:hover { color:#222; border:0px; background-color:#FFF; cursor:default;}
+.body_left #search { padding:2px 6px; height:230px; margin-top:2px; border:4px solid #D2D2D2;}
+.body_left #search .Wdate, .txtSearch{ width:140px; margin-top:2px;}
+.body_left #search p{ margin-top:6px;}
+.body_left #search #btnSear { width:140px; height:26px;}
